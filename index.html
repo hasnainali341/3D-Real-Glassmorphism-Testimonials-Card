@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Real Glassmorphism Testimonials Card </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="elements bg"></div>
+        <div class="elements imgbox">
+            <img src="https://media.tenor.com/3oS9bHXgxqAAAAAM/nope.gif">
+        </div>
+        <div class="elements name">
+            <h2>Someone Famous</h2>
+        </div>
+        <div class="elements content">
+            <p>The Rock's popularity was fueled by his charisma and speaking abilities, which led to many catchphrases and merchandising opportunities. The Rock's popularity continued to grow and audiences still cheered for him even though he was a heel.</p>
+        </div>
+        <div class="cards"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+        integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".box"), {
+            max: 15,
+            speed: 400,
+            glare: true,
+        });
+    </script>
+</body>
+
+</html>
