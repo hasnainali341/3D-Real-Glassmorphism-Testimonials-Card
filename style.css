@@ -1,5 +1,7 @@
+/* Importing Poppins font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Body styling */
 body {
     display: flex;
     justify-content: center;
@@ -17,12 +20,14 @@ body {
     background-position: center;
 }
 
+/* Main box container */
 .box {
     position: relative;
     border-radius: 20px;
     transform-style: preserve-3d;
 }
 
+/* Cards container */
 .box .cards {
     position: relative;
     background-color: rgba(255, 255, 255, 0.1);
@@ -37,6 +42,7 @@ body {
     transform-style: preserve-3d;
 }
 
+/* Styling for elements within the box */
 .elements {
     position: absolute;
     top: 50px;
@@ -53,6 +59,7 @@ body {
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.05);
 }
 
+/* Background element styling */
 .elements.bg::before {
     content: '';
     position: absolute;
@@ -65,10 +72,12 @@ body {
     transition: 0.5s;
 }
 
+/* Hover effect for background element */
 .box:hover .elements.bg::before {
     opacity: 1;
 }
 
+/* Image box styling */
 .elements.imgbox {
     top: 0;
     left: initial;
@@ -79,6 +88,7 @@ body {
     transform: translateZ(120px);
 }
 
+/* Image styling */
 .elements.imgbox img {
     position: absolute;
     width: calc(100% - 20px);
@@ -91,10 +101,12 @@ body {
     transition: 0.5s;
 }
 
+/* Hover effect for image */
 .box:hover .elements.imgbox img {
     opacity: 1;
 }
 
+/* Name container styling */
 .elements.name {
     top: 235px;
     left: initial;
@@ -109,15 +121,17 @@ body {
     box-shadow: none;
     color: #644651;
     transition: 0.5s;
-    transition-delay: 0.25;
+    transition-delay: 0.25s;
     opacity: 0;
 }
 
+/* Hover effect for name */
 .box:hover .elements.name {
     top: 135px;
     opacity: 1;
 }
 
+/* Content container styling */
 .elements.content {
     top: initial;
     left: initial;
@@ -130,6 +144,7 @@ body {
     text-align: center;
 }
 
+/* Paragraph styling within content */
 .elements.content p {
     position: relative;
     color: #644651;
@@ -139,6 +154,7 @@ body {
     opacity: 0;
 }
 
+/* Hover effect for paragraph content */
 .box:hover .elements.content p {
     opacity: 1;
 }
