@@ -2,35 +2,45 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
     <title>3D Real Glassmorphism Testimonials Card </title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
+    <!-- Main container for the testimonial card -->
     <div class="box">
+        <!-- Background element for glassmorphism effect -->
         <div class="elements bg"></div>
+        <!-- Container for the image -->
         <div class="elements imgbox">
-            <img src="https://media.tenor.com/3oS9bHXgxqAAAAAM/nope.gif">
+            <img src="https://media.tenor.com/3oS9bHXgxqAAAAAM/nope.gif" alt="Famous Person">
         </div>
+        <!-- Container for the name -->
         <div class="elements name">
             <h2>Someone Famous</h2>
         </div>
+        <!-- Container for the testimonial content -->
         <div class="elements content">
             <p>The Rock's popularity was fueled by his charisma and speaking abilities, which led to many catchphrases and merchandising opportunities. The Rock's popularity continued to grow and audiences still cheered for him even though he was a heel.</p>
         </div>
+        <!-- Placeholder for additional cards (if any) -->
         <div class="cards"></div>
     </div>
+    <!-- Script to add tilt effect using VanillaTilt.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
         integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        // Initialize VanillaTilt on the main container
         VanillaTilt.init(document.querySelector(".box"), {
-            max: 15,
-            speed: 400,
-            glare: true,
+            max: 15, // Maximum tilt angle
+            speed: 400, // Speed of the tilt effect
+            glare: true, // Enable glare effect
         });
     </script>
 </body>
